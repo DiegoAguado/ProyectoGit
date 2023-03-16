@@ -101,15 +101,15 @@ public class Main {
         }
     }
 
-    //Método que
+    //Método que filtra la lista de personas por edad (<25) y luego por la ciudad de Madrid y devuelve la primera persona
     public static Person filterMadrid(List<Person> list){
-        Stream<Person> l = filterAges(list).stream();
-        Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst();
+        Stream<Person> l = filterAges(list).stream(); //Filtra primero por la edad
+        Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst(); //De la lista restante filtra por la ciudad Madrid y se queda con el primero
 
-        if(s.isPresent()){
-            return s.get();
+        if(s.isPresent()){ //Si hay personas de Madrid
+            return s.get(); //Devuelve la persona
         }else{
-            return null;
+            return null; //Sino devuelve null
         }
     }
 
