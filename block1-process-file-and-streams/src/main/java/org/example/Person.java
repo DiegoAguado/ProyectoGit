@@ -26,12 +26,38 @@ public class Person {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTown() {
+        return town;
+    }
+
+    public void setTown(String town) {
+        this.town = town;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", town='" + town + '\'' +
-                ", age=" + age +
-                '}';
+        return "Name: "+this.name+". "+"Town: "+this.town+". "+"Age: "+this.age;
+    }
+
+    public boolean equals(Object o){
+        Person p = (Person)o;
+        if(this.name==p.getName() && this.town==p.getTown() && this.age==p.getAge())return true;
+        else return false;
     }
 }
