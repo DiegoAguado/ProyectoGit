@@ -19,6 +19,7 @@ public class Main {
         //filterNames(list);
         //list=filterAges(list);
         //System.out.println(filterMadrid(list));
+        //System.out.println(filterBarcelona(list));
         /*for(Person p:list){
             System.out.println(p);
         }*/
@@ -107,6 +108,18 @@ public class Main {
         Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst(); //De la lista restante filtra por la ciudad Madrid y se queda con el primero
 
         if(s.isPresent()){ //Si hay personas de Madrid
+            return s.get(); //Devuelve la persona
+        }else{
+            return null; //Sino devuelve null
+        }
+    }
+
+    //Método que filtra la lista de personas por edad (<25) y luego por la ciudad de Barcelona y devuelve la primera persona
+    public static Person filterBarcelona(List<Person> list){
+        Stream<Person> l = filterAges(list).stream(); //Filtra primero por la edad
+        Optional<Person> s = l.filter(u -> u.getTown().equals("Barcelona")).findFirst(); //De la lista restante filtra por la ciudad Barcelona y se queda con el primero
+
+        if(s.isPresent()){ //Si hay personas de Barcelona
             return s.get(); //Devuelve la persona
         }else{
             return null; //Sino devuelve null
