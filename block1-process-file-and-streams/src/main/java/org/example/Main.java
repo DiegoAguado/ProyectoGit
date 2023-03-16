@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
@@ -16,10 +17,11 @@ public class Main {
 
         List<Person> list = personList(path);
         //filterNames(list);
-        list=filterAges(list);
-        for(Person p:list){
+        //list=filterAges(list);
+        //System.out.println(filterMadrid(list));
+        /*for(Person p:list){
             System.out.println(p);
-        }
+        }*/
     }
 
     //Método que pasada una ruta de un fichero, lee el fichero y devuelve una lista de personas
@@ -96,6 +98,18 @@ public class Main {
 
         for (Person p : list) { //Recorre la lista
             System.out.println(p); //Imprime la persona
+        }
+    }
+
+    //Método que
+    public static Person filterMadrid(List<Person> list){
+        Stream<Person> l = filterAges(list).stream();
+        Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst();
+
+        if(s.isPresent()){
+            return s.get();
+        }else{
+            return null;
         }
     }
 
