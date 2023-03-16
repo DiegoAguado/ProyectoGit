@@ -14,35 +14,50 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String path = sc.next();
-        try {
-            List<Person> list = personList(path);
-            for(Person p:list){
-                System.out.println(p);
-            }
-        } catch (IOException e) {
-            System.out.println(e.getCause());
-            System.out.println(e.getLocalizedMessage());
+        List<Person> list = personList(path);
+        for(Person p:list){
+            System.out.println(p);
         }
     }
-    public static List<Person> personList(String path) throws IOException {
+    public static List<Person> personList(String path) throws InvalidLineFormatException {
         List<Person> l = new ArrayList<>();
-        String name,town, line;
-        int age;
+        String name = "", town = "", line;
+        int age = 0, i = 0;
         Path p = Paths.get(path);
-        Stream<String> f=Files.lines(p);
+        Stream<String> f = null;
+        try {
+            f = Files.lines(p);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         List<String> lines = f.toList();
-        for(int i=0;i<lines.size();i++){
-            line=lines.get(i);
-            name=line.substring(0,line.indexOf(":"));
-            line=line.substring(line.indexOf(":")+1);
-            town=line.substring(0, line.indexOf(":"));
-            line=line.substring(line.indexOf(":")+1);
-            if(line=="" || line==" "){
-                age=0;
-            }else{
-                age=Integer.parseInt(line);
+        for (String s : lines) {
+            name = "";
+            i++;
+            line = s;
+            if (line.indexOf(":") == -1) {
+                throw new InvalidLineFormatException("Format is not correct in line " + i + ". It should be -> name:town:age.");
+            } else {
+                name = line.substring(0, line.indexOf(":"));
+                if (name == "" || name == " ") {
+                    throw new InvalidLineFormatException("Format is not correct in line " + i + ". The name is necessary.");
+                } else {
+                    line = line.substring(line.indexOf(":") + 1);
+                    if (line.indexOf(":") != -1) {
+                        town = line.substring(0, line.indexOf(":"));
+                        line = line.substring(line.indexOf(":") + 1);
+                        if (line == "" || line == " ") {
+                            age = 0;
+                        } else {
+                            age = Integer.parseInt(line);
+                        }
+                    } else {
+                        town = line;
+                        age = 0;
+                    }
+                }
+                l.add(new Person(name, town, age));
             }
-            l.add(new Person(name));
         }
         return l;
     }
