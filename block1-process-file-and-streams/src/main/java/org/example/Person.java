@@ -55,9 +55,9 @@ public class Person {
         return "Name: "+this.name+". "+"Town: "+this.town+". "+"Age: "+this.age;
     }
 
+    @Override
     public boolean equals(Object o){
         Person p = (Person)o;
-        if(this.name==p.getName() && this.town==p.getTown() && this.age==p.getAge())return true;
-        else return false;
+        return this.name==p.getName() && this.town==p.getTown() && this.age==p.getAge();
     }
 }

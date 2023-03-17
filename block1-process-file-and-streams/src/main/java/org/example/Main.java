@@ -74,8 +74,8 @@ public class Main {
 
     //This method returns a list of people with less than 25 years old
     public static List<Person> filterAges(String path) {
-        return unknownTown(personList(path).stream().filter(u -> u.getAge() < 25 && u.getAge() != 0).toList());
         //Converts a List to a Stream, filters by age, converts it again to a List and then uses method unknownTown() to change empty towns to 'unknown' and then returns it
+        return unknownTown(personList(path).stream().filter(u -> u.getAge() < 25 && u.getAge() != 0).toList());
     }
 
     //This method filters a list, deleting people whose name starts with an 'A' and then prints it on screen
@@ -103,8 +103,9 @@ public class Main {
         Stream<Person> l = filterAges(path).stream(); //Filters list by age
         Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst(); //Then filters by town and takes the first person
 
-        if (s.isPresent()) return s.get(); //If there is, at least, 1 person  from Madrid, it printes it
-        else return null; //If not, it prints null
+        return s.isPresent() ? s.get() : null;
+        //If there is, at least, 1 person  from Madrid, it printes it
+        //If not, it prints null
     }
 
     //This method filters by age and then by town, where it must be 'Barcelona', and then prints the first person
@@ -112,7 +113,8 @@ public class Main {
         Stream<Person> l = filterAges(path).stream(); //Filters list by age
         Optional<Person> s = l.filter(u -> u.getTown().equals("Barcelona")).findFirst(); //Then filters by town and takes the first person
 
-        if (s.isPresent()) return s.get(); //If there is, at least, 1 person  from Barcelona, it printes it
-        else return null; //If not, it prints null
+        return s.isPresent() ? s.get() : null;
+        //If there is, at least, 1 person  from Barcelona, it printes it
+        //If not, it prints null
     }
 }
