@@ -17,10 +17,10 @@ public class Main {
         //List<Person> list = personList(path);
         //for (Person p : lista) System.out.println(p);
         //filterAges(path);
-        //filterNames(path);
+        filterNames(path);
         //System.out.println(filterMadrid(path));
         //System.out.println(filterBarcelona(path));
-        for (Person p : filterAges(path)) System.out.println(p);
+        //for (Person p : filterAges(path)) System.out.println(p);
     }
 
     // With the file path as parameter, this method reads the file and returns a list of people
@@ -81,7 +81,7 @@ public class Main {
     //This method filters a list, deleting people whose name starts with an 'A' and then prints it on screen
     public static void filterNames(String path) {
         List<Person> list = personList(path);
-        List<Person> newList = personList(path).stream().filter(u -> u.getName().indexOf("A") == 0).toList();
+        List<Person> newList = list.stream().filter(u -> u.getName().indexOf("A") == 0).toList();
         //Converts a List to a Stream, filters by names, converts it again to a List and then saves the list in an auxiliar list
 
         for (Person p : newList) { //Travels the auxilar list
