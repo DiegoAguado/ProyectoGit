@@ -17,7 +17,7 @@ public class Main {
         //List<Person> list = personList(path);
         //for (Person p : lista) System.out.println(p);
         //filterAges(path);
-        filterNames(path);
+        //filterNames(path);
         //System.out.println(filterMadrid(path));
         //System.out.println(filterBarcelona(path));
         //for (Person p : filterAges(path)) System.out.println(p);
@@ -93,6 +93,19 @@ public class Main {
             }
         }
 
+        /* Other option
+         *
+         * List<Person> list = personList(path);
+         * for(Person p: list){
+         *      if(p.getName().substring(0,1).equals("A")){
+         *          people.remove(p);
+         *
+         *          filterNames(list);
+         *          break;
+         *      }
+         * }
+         */
+
         list = unknownTown(list);
 
         for (Person p : list) System.out.println(p); //Travels the list and prints people on screen
@@ -103,9 +116,8 @@ public class Main {
         Stream<Person> l = filterAges(path).stream(); //Filters list by age
         Optional<Person> s = l.filter(u -> u.getTown().equals("Madrid")).findFirst(); //Then filters by town and takes the first person
 
+        //If there is, at least, 1 person  from Madrid, it printes it and if not, it prints null
         return s.isPresent() ? s.get() : null;
-        //If there is, at least, 1 person  from Madrid, it printes it
-        //If not, it prints null
     }
 
     //This method filters by age and then by town, where it must be 'Barcelona', and then prints the first person
@@ -113,8 +125,7 @@ public class Main {
         Stream<Person> l = filterAges(path).stream(); //Filters list by age
         Optional<Person> s = l.filter(u -> u.getTown().equals("Barcelona")).findFirst(); //Then filters by town and takes the first person
 
+        //If there is, at least, 1 person  from Barcelona, it printes it and if not, it prints null
         return s.isPresent() ? s.get() : null;
-        //If there is, at least, 1 person  from Barcelona, it printes it
-        //If not, it prints null
     }
 }
