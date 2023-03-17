@@ -14,14 +14,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String path = sc.next();
-        List<Person> lista = personList(path);
-        for (Person p : lista) System.out.println(p);
+        //List<Person> list = personList(path);
+        //for (Person p : lista) System.out.println(p);
+        //filterAges(path);
         //filterNames(path);
-        //filterNames(list);
-        //list = filterAges(list);
-        //System.out.println(filterMadrid(list));
-        //System.out.println(filterBarcelona(list));
-        //for (Person p : filterAges(path)) System.out.println(p);
+        //System.out.println(filterMadrid(path));
+        //System.out.println(filterBarcelona(path));
+        for (Person p : filterAges(path)) System.out.println(p);
     }
 
     // With the file path as parameter, this method reads the file and returns a list of people
