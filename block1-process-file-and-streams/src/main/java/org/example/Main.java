@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce la ruta del archivo:");
         String path = sc.next();
         //List<Person> list = personList(path);
         //for (Person p : lista) System.out.println(p);
