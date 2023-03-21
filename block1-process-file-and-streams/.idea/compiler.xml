@@ -9,8 +9,5 @@
         <module name="block1-process-file-and-streams" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="block1-process-file-and-streams" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
