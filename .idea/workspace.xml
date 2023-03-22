@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d7b0fcd-8dd5-400d-90ca-8812c0a16672" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/.run/Main.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/block3-maven-package/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-create-repo-git/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/block3-maven-package.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego.aguado/IdeaProjects/FormacionBosonit/block3-maven-package&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego.aguado/IdeaProjects/FormacionBosonit/block3-create-repo-git&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
