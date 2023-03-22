@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FormacionBosonit.iml" filepath="$PROJECT_DIR$/.idea/FormacionBosonit.iml" />
       <module fileurl="file://$PROJECT_DIR$/block3-create-repo-git.iml" filepath="$PROJECT_DIR$/block3-create-repo-git.iml" />
+      <module fileurl="file://$PROJECT_DIR$/block3-create-repogit/block3-create-repogit.iml" filepath="$PROJECT_DIR$/block3-create-repogit/block3-create-repogit.iml" />
       <module fileurl="file://$PROJECT_DIR$/block3-maven-package/block3-maven-package.iml" filepath="$PROJECT_DIR$/block3-maven-package/block3-maven-package.iml" />
     </modules>
   </component>
