@@ -22,7 +22,7 @@ public class Main {
         //System.out.println(filterMadrid(path));
         //System.out.println(filterBarcelona(path));
         //for (Person p : filterAges(path)) System.out.println(p);
-    }git sta
+    }
 
     // With the file path as parameter, this method reads the file and returns a list of people
     public static List<Person> personList(String path) throws InvalidLineFormatException {
