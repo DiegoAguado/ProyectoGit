@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FormacionBosonit.iml" filepath="$PROJECT_DIR$/.idea/FormacionBosonit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/block3-maven-package.iml" filepath="$PROJECT_DIR$/block3-maven-package.iml" />
     </modules>
   </component>
 </project>
