@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d7b0fcd-8dd5-400d-90ca-8812c0a16672" name="Changes" comment="block3-create-repogit modified">
-      <change afterPath="$PROJECT_DIR$/block3-create-repo-git/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/block3-maven-package/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/block3-maven-package/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0d7b0fcd-8dd5-400d-90ca-8812c0a16672" name="Changes" comment="block3-create-repogit modified" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/diego.aguado/IdeaProjects/FormacionBosonit/block3-create-repo-git",
+    "last_opened_file_path": "C:/Users/diego.aguado/IdeaProjects/FormacionBosonit",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -46,6 +40,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diego.aguado\IdeaProjects\FormacionBosonit\block1-process-file-and-streams" />
       <recent name="C:\Users\diego.aguado\IdeaProjects\FormacionBosonit" />
     </key>
   </component>
