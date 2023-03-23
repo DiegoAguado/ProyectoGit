@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37cafd8e-aa30-48f8-8270-7cd59f57ff7e" name="Changes" comment="">
+    <list default="true" id="37cafd8e-aa30-48f8-8270-7cd59f57ff7e" name="Changes" comment="gitignore">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/PROYECTOGIT/fichero1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/PROYECTOGIT/fichero2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../block3-create-repo-git/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/block3-maven-package-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/block3-maven-package-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +56,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego.aguado/IdeaProjects/FormacionBosonit/block3-create-repogit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/diego.aguado/IdeaProjects/FormacionBosonit&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -59,9 +71,26 @@
       <option name="presentableId" value="Default" />
       <updated>1679408536369</updated>
     </task>
+    <task id="LOCAL-00001" summary="gitignore">
+      <created>1679558500971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679558500971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore">
+      <created>1679558630107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679558630107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
 </project>

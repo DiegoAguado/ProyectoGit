@@ -6,15 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="block3-maven-package" />
         <module name="block3-create-repo-git" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="block3-create-repo-git" target="1.5" />
-      <module name="block3-create-repogit" target="1.5" />
-      <module name="block3-maven-package" target="17" />
-      <module name="prueba" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
